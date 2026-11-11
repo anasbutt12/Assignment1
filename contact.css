@@ -339,3 +339,58 @@ footer {
     font-size: 13px;
     padding: 20px;
 }
+
+/* ===== Media queries ===== */
+
+/* tablet: stack everything in one column */
+@media (max-width: 900px) {
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "about"
+            "contact"
+            "faq";
+    }
+
+    .stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .topbar {
+        flex-direction: column;
+        padding: 14px 16px;
+    }
+
+    .topbar nav {
+        justify-content: center;
+    }
+
+    .topbar nav a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .page {
+        padding: 25px 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+}
