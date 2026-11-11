@@ -114,7 +114,8 @@ main {
     right: 0;
     bottom: 0;
     padding: 15px 18px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(11, 26, 44, 0.95), rgba(11, 26, 44, 0.8));
+    backdrop-filter: blur(3px);
 }
 
 .item figcaption h2 {
