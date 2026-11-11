@@ -132,3 +132,53 @@ footer {
     font-size: 13px;
     padding: 20px;
 }
+
+/* ===== Transforms and transitions ===== */
+.site-header nav a,
+.btn {
+    transition: all 0.3s ease;
+}
+
+.site-header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) rotate(-1deg);
+    box-shadow: 0 16px 30px rgba(31, 58, 95, 0.3);
+}
+
+.card img {
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(224, 123, 0, 0.45);
+}
+
+/* small screens: stack the header */
+@media (max-width: 600px) {
+    .site-header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .site-header nav {
+        justify-content: center;
+    }
+
+    .intro h2 {
+        font-size: 26px;
+    }
+}
