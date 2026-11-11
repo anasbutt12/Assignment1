@@ -47,8 +47,8 @@ body {
 }
 
 .site-header nav a.active {
-    background-color: #e07b00;
-    border-color: #e07b00;
+    background-color: #b85c00;
+    border-color: #b85c00;
     color: #ffffff;
 }
 
@@ -117,7 +117,7 @@ main {
 
 .btn {
     align-self: flex-start;
-    background: linear-gradient(135deg, #f39a2b, #e07b00);
+    background: linear-gradient(135deg, #b85c00, #9a4d00);
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
@@ -128,7 +128,7 @@ main {
 
 footer {
     text-align: center;
-    color: #5a6b80;
+    color: #4a5a6e;
     font-size: 13px;
     padding: 20px;
 }
@@ -164,7 +164,7 @@ footer {
 .btn:hover,
 .btn:focus {
     transform: scale(1.05);
-    box-shadow: 0 6px 14px rgba(224, 123, 0, 0.45);
+    box-shadow: 0 6px 14px rgba(154, 77, 0, 0.45);
 }
 
 /* small screens: stack the header */

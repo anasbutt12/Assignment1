@@ -2,10 +2,10 @@
 
 /* colours stored as variables so the JS theme toggle can swap them */
 :root {
-    --bg: #f6f2ec;
+    --bg: #eef2f7;
     --surface: #ffffff;
     --text: #23262b;
-    --muted: #6b7280;
+    --muted: #555c68;
     --primary: #1f3a5f;
     --accent: #e07b00;
     --border: rgba(31, 58, 95, 0.18);
@@ -167,7 +167,6 @@ h2 {
 
 .stat span {
     font-size: 14px;
-    opacity: 0.85;
 }
 
 /* ===== Contact form card ===== */
@@ -263,7 +262,7 @@ h2 {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background: linear-gradient(135deg, #f39a2b, #e07b00);
+    background: linear-gradient(135deg, #b85c00, #9a4d00);
     box-shadow: 0 6px 16px rgba(224, 123, 0, 0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Barlow", Arial, sans-serif;
     margin: 0;
     color: #f1f4f8;
     background: radial-gradient(circle at top, #23436b 0%, #0b1a2c 70%);
@@ -131,7 +131,7 @@ main {
 
 footer {
     text-align: center;
-    color: #8193aa;
+    color: #a9b8cb;
     font-size: 13px;
     padding: 30px 20px;
 }
