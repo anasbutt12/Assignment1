@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bole Machinery - Contact &amp; About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="topbar">
+        <a href="index.html" class="logo">BOLE<span>.</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media &amp; Specs</a>
+            <a href="register.html">Register</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+    </header>
+
+    <main class="page">
+        <!-- About section -->
+        <section class="about" id="about">
+            <div class="about-text">
+                <h1>About Bole Machinery</h1>
+                <p>
+                    Bole Machinery designs and builds servo energy-saving injection moulding machines.
+                    Our machines use German-engineered central clamping, which spreads force evenly over
+                    the mould and gives high precision parts with less wear.
+                </p>
+                <p>
+                    We work with factories making car parts, medical products, packaging and
+                    electronics. Our goal is simple: strong machines that use less power.
+                </p>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <strong>60%</strong>
+                    <span>Energy saved</span>
+                </div>
+                <div class="stat">
+                    <strong>120+</strong>
+                    <span>Countries served</span>
+                </div>
+                <div class="stat">
+                    <strong>24/7</strong>
+                    <span>Service hotline</span>
+                </div>
+                <div class="stat">
+                    <strong>4</strong>
+                    <span>Machine series</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact form -->
+        <section class="contact-card" id="contact">
+            <h2>Send us a message</h2>
+            <p class="hint">Fields marked * are required.</p>
+
+            <form id="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="name">Full name *</label>
+                        <input type="text" id="name" name="name" required minlength="3">
+                        <small class="error" id="name-error"></small>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <small class="error" id="email-error"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="field">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+44 7700 900123">
+                        <small class="error" id="phone-error"></small>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="topic">What is it about? *</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">-- Choose a topic --</option>
+                        <option value="quote">Machine quote</option>
+                        <option value="service">Service or maintenance</option>
+                        <option value="parts">Spare parts</option>
+                        <option value="other">Something else</option>
+                    </select>
+                    <small class="error" id="topic-error"></small>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required minlength="20" maxlength="500"></textarea>
+                    <div class="message-info">
+                        <small class="error" id="message-error"></small>
+                        <small id="char-count">0 / 500</small>
+                    </div>
+                </div>
+
+                <button type="submit" class="send-btn">Send message</button>
+                <p id="form-status" class="form-status" role="status"></p>
+            </form>
+        </section>
+
+        <!-- FAQ accordion -->
+        <section class="faq" id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">How long does delivery take?</button>
+                <div class="faq-answer" hidden>
+                    <p>Standard machines usually ship in 4 to 6 weeks. Larger custom machines can take up to 10 weeks.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">Do you install the machine for us?</button>
+                <div class="faq-answer" hidden>
+                    <p>Yes. Our engineers deliver, level and connect the machine and do a test run with your mould.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">How much energy can a servo machine save?</button>
+                <div class="faq-answer" hidden>
+                    <p>Compared to a normal hydraulic machine, our servo drive can cut electricity use by up to 60%.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">Is there a warranty?</button>
+                <div class="faq-answer" hidden>
+                    <p>Every new machine comes with a 2 year warranty on the main parts, and you can extend it with a maintenance plan.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bole Machinery student project</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
