@@ -12,7 +12,24 @@ body {
     min-height: 100vh;
 }
 
-/* header + nav: dark navy bar with pill links */
+/* top navbar: same as the Part 1 pages */
+nav {
+    background-color: #2f6db5;
+    text-align: center;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+/* page header: dark navy bar */
 .site-header {
     background: linear-gradient(90deg, #0f2440, #1f3a5f);
     padding: 18px 30px;
@@ -29,27 +46,6 @@ body {
     color: #ffffff;
     font-size: 24px;
     letter-spacing: 1px;
-}
-
-.site-header nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.site-header nav a {
-    color: #dce6f2;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 6px 14px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.site-header nav a.active {
-    background-color: #b85c00;
-    border-color: #b85c00;
-    color: #ffffff;
 }
 
 main {
@@ -134,14 +130,8 @@ footer {
 }
 
 /* ===== Transforms and transitions ===== */
-.site-header nav a,
 .btn {
     transition: all 0.3s ease;
-}
-
-.site-header nav a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    transform: translateY(-2px);
 }
 
 .card {
@@ -172,10 +162,6 @@ footer {
     .site-header {
         justify-content: center;
         text-align: center;
-    }
-
-    .site-header nav {
-        justify-content: center;
     }
 
     .intro h2 {
